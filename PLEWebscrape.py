@@ -15,10 +15,3 @@ for product in soup.find_all('span', { "class" : "vc_productdesc" }):
     productPrice = product.find_next('div', class_='vc_productrowprice')
     getPrice = productPrice.find('span', class_='vc_productprice')
     print productNum, productName.get_text(), getPrice.get_text()
-    
-
-
-
-    
-
-
