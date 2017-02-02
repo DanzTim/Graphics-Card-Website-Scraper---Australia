@@ -1,5 +1,6 @@
 # Graphics-Card-Website-Scraper---Australia
-Scraper for Western Australian graphics card retailer from their website
+Scraper for Western Australian graphics card retailer for their website.
+MSY is the only one that can be used for outside WA, just change the URL to your location.
 
 The python scripts uses Beautiful Soup. So you will need BeautifulSoup installed. Get here: https://www.crummy.com/software/BeautifulSoup/
 
