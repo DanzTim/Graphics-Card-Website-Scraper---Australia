@@ -1,4 +1,4 @@
-'''Webscraper for Austin Computers website to get graphics card name and price'''
+'''Webscraper for VTechIndustries website to get graphics card name and price'''
 
 from bs4 import BeautifulSoup
 import requests
@@ -19,12 +19,11 @@ def scrapePage(websiteURL):
         global productNum;
         productNum = productNum + 1
         productPrice = productName.find_next('span', class_="price")
-        #Using str.split() to get rid of everything after "- " for the name. If you want to include it, just remove .split("- ")[0]
         print repr(productNum).rjust(2), productName.get('title'), productPrice.get_text()
     return
 
-#Scrapes all the 5 pages for the graphics card section of the Austin Computers website    
-while pagenum <= 2:
+#Scrapes all the 5 pages for the graphics card section of the VTechIndustries website    
+while pagenum <= 5:
     if pagenum == 1:#Page one does not need extended URL
         scrapePage(websiteURL)
     else:           #Page 2 and above needs extended URL using ?p=2.
