@@ -23,7 +23,7 @@ def scrapePage(websiteURL):
     return
 
 #Scrapes all the 5 pages for the graphics card section of the Austin Computers website    
-while pagenum <= 2:
+while pagenum <= 5:
     if pagenum == 1:#Page one does not need extended URL
         scrapePage(websiteURL)
     else:           #Page 2 and above needs extended URL using ?p=2.
